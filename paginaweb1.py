@@ -1,5 +1,6 @@
 import streamlit as st
 import openai
+from PIL import Image
 
 # Configuración de OpenAI (asegúrate de tener tu propia clave API)
 openai.api_key = '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'
@@ -15,11 +16,13 @@ def obtener_info_inversionistas(inversionista_seleccionado):
 
 def main():
     # URL de la imagen en GitHub
-    github_image_url = "https://github.com/SofiMedina07/sitioweb/blob/main/Header.jpg"
+    image = Image.open('Header.jpg')
+    #github_image_url = "https://github.com/SofiMedina07/sitioweb/blob/main/Header.jpg"
     
     # Mostrar la imagen
-    st.image(github_image_url, caption="Imagen desde GitHub")
-
+    #st.image(github_image_url, caption="Imagen desde GitHub")
+    st.image(image)
+    st.header(divider_'red')
     st.header(':red[FINTECH BANORTE]', divider='red')
 
     # Sección para agregar medicamentos al menú desplegable
