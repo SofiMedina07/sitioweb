@@ -19,10 +19,10 @@ def main():
     col1, col2 = st.beta_columns([6,6])
 
     with col1:
-    st.image(image,caption=None, width=800)
+        st.image(image,caption=None, width=800)
     
     with col2:
-    st.image(image,caption=None, width=800)
+        st.image(image,caption=None, width=800)
 
     # Mostrar la imagen
     #st.image(image,caption=None, width=800)
