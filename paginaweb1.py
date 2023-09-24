@@ -18,9 +18,9 @@ def main():
     github_image_url = "https://github.com/SofiMedina07/sitioweb/blob/main/Header.jpg"
     
     # Mostrar la imagen
-    st.image(github_image_url, caption="Imagen desde GitHub", use_column_width=True)
+    st.image(github_image_url, caption="Imagen desde GitHub", use_column_width=True, divider='rainbow')
 
-    st.title(':red[FINTECH BANORTE]')
+    st.title(':red[FINTECH BANORTE]', divider='rainbow')
 
     # Sección para agregar medicamentos al menú desplegable
     inversionistas = ["","Inversionista agresivo dinámico","Inversionista conservador cauteloso","Inversionista moderado perspicaz","Inversionista moderado pasivo"]
