@@ -14,7 +14,7 @@ def obtener_info_inversionistas(inversionista_seleccionado):
     return respuesta.choices[0].text.strip()
 
 def main():
-    st.title('red[FINTECH BANORTE]')
+    st.title(':red[FINTECH BANORTE]')
 
 
     # Sección para agregar medicamentos al menú desplegable
