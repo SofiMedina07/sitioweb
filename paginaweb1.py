@@ -16,17 +16,9 @@ def obtener_info_inversionistas(inversionista_seleccionado):
 def main():
     # URL de la imagen en GitHub
     image = Image.open('Header.jpg')
-    col1, col2= st.columns([10,10])
-
-    with col1:
-        st.image(image,caption=None)
     
-    with col2:
-        st.image(image,caption=None)
-
-
     # Mostrar la imagen
-    #st.image(image,caption=None, width=800)
+    st.image(image,caption=None, width=800)
    
     st.header(':red[FINTECH BANORTE]', divider='red')
 
