@@ -16,7 +16,7 @@ def obtener_info_inversionistas(inversionista_seleccionado):
 def main():
     # URL de la imagen en GitHub
     image = Image.open('Header.jpg')
-    imagen_fondo = Image.open('bottom.jpg')
+    image2 = Image.open('coach.jpg')
     # Mostrar la imagen
     st.image(image,caption=None, width=340)
    
@@ -31,7 +31,7 @@ def main():
         st.write("Obteniendo información...")
         info = obtener_info_inversionistas(inversionista_seleccionado)
         st.write(info)
-
+    st.image(image2,caption=None, width=340)
     # Sección para conversación con la IA sobre medicamentos
     st.subheader("Conversa con la IA sobre inversiones:")
     pregunta = st.text_input("¿Qué te gustaría saber?")
@@ -39,5 +39,4 @@ def main():
     if st.button("Preguntar"):
         respuesta = obtener_info_inversionistas(pregunta)
         st.write(f"Respuesta: {respuesta}")
-    st.image(imagen_fondo,caption=None, width=370)
 main()
