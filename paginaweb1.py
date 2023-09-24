@@ -22,7 +22,7 @@ def main():
     # Mostrar la imagen
     #st.image(github_image_url, caption="Imagen desde GitHub")
     st.image(image)
-    st.header(divider_'red')
+   
     st.header(':red[FINTECH BANORTE]', divider='red')
 
     # Sección para agregar medicamentos al menú desplegable
