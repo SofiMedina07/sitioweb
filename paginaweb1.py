@@ -16,12 +16,10 @@ def obtener_info_inversionistas(inversionista_seleccionado):
 
 def main():
     # URL de la imagen en GitHub
-    image = Image.open('Header.jpg', caption=None, width=300)
-    #github_image_url = "https://github.com/SofiMedina07/sitioweb/blob/main/Header.jpg"
+    image = Image.open('Header.jpg')
     
     # Mostrar la imagen
-    #st.image(github_image_url, caption="Imagen desde GitHub")
-    st.image(image)
+    st.image(imagecaption=None, width=300)
    
     st.header(':red[FINTECH BANORTE]', divider='red')
 
