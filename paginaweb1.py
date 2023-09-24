@@ -19,7 +19,7 @@ def main():
     image = Image.open('Header.jpg')
     
     # Mostrar la imagen
-    st.image(imagecaption=None, width=300)
+    st.image(image,caption=None, width=300)
    
     st.header(':red[FINTECH BANORTE]', divider='red')
 
