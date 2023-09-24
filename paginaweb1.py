@@ -18,7 +18,7 @@ def obtener_info_pregunta(inversionista_seleccionado,pregunta):
     respuesta = openai.Completion.create(
       engine="text-davinci-003",
       prompt=f"Tomando en cuenta que soy un {inversionista_seleccionado} dime {pregunta}.",
-      max_tokens=150  # Ajusta según tus necesidades
+      max_tokens=300  # Ajusta según tus necesidades
     )
     return respuesta.choices[0].text.strip()
     
