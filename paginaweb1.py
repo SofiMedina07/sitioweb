@@ -13,10 +13,9 @@ def obtener_info_inversionistas(inversionista_seleccionado):
       max_tokens=150  # Ajusta según tus necesidades
     )
     return respuesta.choices[0].text.strip()
-
-def main():
-    with open("style.css") as f:
+with open("style.css") as f:
     st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
+def main():
     # URL de la imagen en GitHub
     image = Image.open('Header.jpg')
     
