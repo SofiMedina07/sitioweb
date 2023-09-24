@@ -14,8 +14,13 @@ def obtener_info_inversionistas(inversionista_seleccionado):
     return respuesta.choices[0].text.strip()
 
 def main():
-    st.title(':red[FINTECH BANORTE]')
+    # URL de la imagen en GitHub
+    github_image_url = "https://github.com/SofiMedina07/sitioweb/blob/main/Header.jpg"
+    
+    # Mostrar la imagen
+    st.image(github_image_url, caption="Imagen desde GitHub", use_column_width=True)
 
+    st.title(':red[FINTECH BANORTE]')
 
     # Sección para agregar medicamentos al menú desplegable
     inversionistas = ["","Inversionista agresivo dinámico","Inversionista conservador cauteloso","Inversionista moderado perspicaz","Inversionista moderado pasivo"]
