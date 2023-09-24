@@ -8,12 +8,12 @@ openai.api_key = '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'
 # Función que conecta con GPT-4 y devuelve una respuesta a la consulta del usuario
 def obtener_info_inversionistas(inversionista_seleccionado):
     respuesta = openai.Completion.create(
-        engine="text-davinci-003",
-        prompt=f"Proporciona información sobre el tipo de {inversionista_seleccionado}.",
-        max_tokens=150  # Ajusta según tus necesidades
+      engine="text-davinci-003",
+      prompt=f"Proporciona información sobre el tipo de {inversionista_seleccionado}.",
+      max_tokens=150  # Ajusta según tus necesidades
     )
     return respuesta.choices[0].text.strip()
-    
+
 def obtener_info_pregunta(inversionista_seleccionado,pregunta):
     respuesta = openai.Completion.create(
       engine="text-davinci-003",
@@ -21,11 +21,11 @@ def obtener_info_pregunta(inversionista_seleccionado,pregunta):
       max_tokens=300  # Ajusta según tus necesidades
     )
     return respuesta.choices[0].text.strip()
-    
+
 def main():
     # URL de la imagen en GitHub
-    image = Image.open('Header.jpg')
-    image2 = Image.open('coach.jpg')
+    image = Image.open("C:/Users/Sofi/Desktop/site/Header.jpg")
+    image2 = Image.open("C:/Users/Sofi/Desktop/site/coach.jpg")
     # Mostrar la imagen
     st.image(image,caption=None, width=340)
    
