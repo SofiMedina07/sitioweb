@@ -18,7 +18,7 @@ def main():
     image = Image.open('Header.jpg')
     image2 = Image.open('coach.jpg')
     # Mostrar la imagen
-    st.image(image,caption=None, width=240)
+    st.image(image,caption=None, width=340)
    
     st.header(':red[FINTECH BANORTE]', divider='red')
 
@@ -31,7 +31,7 @@ def main():
         st.write("Obteniendo información...")
         info = obtener_info_inversionistas(inversionista_seleccionado)
         st.write(info)
-    st.image(image2,caption=None, width=340)
+    st.image(image2,caption=None, width=240)
     # Sección para conversación con la IA sobre medicamentos
     st.subheader("Conversa con la IA sobre inversiones:")
     pregunta = st.text_input("¿Qué te gustaría saber?")
