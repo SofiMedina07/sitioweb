@@ -3,7 +3,7 @@ import openai
 from PIL import Image
 
 # Configuración de OpenAI (asegúrate de tener tu propia clave API)
-openai.api_key = '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'
+openai.api_key = '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'
 
 # Función que conecta con GPT-4 y devuelve una respuesta a la consulta del usuario
 def obtener_info_inversionistas(inversionista_seleccionado):
