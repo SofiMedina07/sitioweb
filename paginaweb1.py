@@ -15,12 +15,17 @@ def obtener_info_inversionistas(inversionista_seleccionado):
     return respuesta.choices[0].text.strip()
 def main():
     # URL de la imagen en GitHub
-    with open("style.css") as f:
-        st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
     image = Image.open('Header.jpg')
-    
-    # Mostrar la imagen
+    col1, col2 = st.beta_columns([6,6])
+
+    with col1:
     st.image(image,caption=None, width=800)
+    
+    with col2:
+    st.image(image,caption=None, width=800)
+
+    # Mostrar la imagen
+    #st.image(image,caption=None, width=800)
    
     st.header(':red[FINTECH BANORTE]', divider='red')
 
