@@ -13,6 +13,15 @@ def obtener_info_inversionistas(inversionista_seleccionado):
       max_tokens=150  # Ajusta según tus necesidades
     )
     return respuesta.choices[0].text.strip()
+    
+def obtener_info_pregunta(inversionista_seleccionado,pregunta):
+    respuesta = openai.Completion.create(
+      engine="text-davinci-003",
+      prompt=f"Tomando en cuenta que soy un {inversionista_seleccionado} dime {pregunta}.",
+      max_tokens=150  # Ajusta según tus necesidades
+    )
+    return respuesta.choices[0].text.strip()
+    
 def main():
     # URL de la imagen en GitHub
     image = Image.open('Header.jpg')
@@ -37,6 +46,6 @@ def main():
     pregunta = st.text_input("¿Qué te gustaría saber?")
     
     if st.button("Preguntar"):
-        respuesta = obtener_info_inversionistas(pregunta)
+        respuesta = obtener_info_pregunta(inversionista_seleccionado,pregunta)
         st.write(f"Respuesta: {respuesta}")
 main()
