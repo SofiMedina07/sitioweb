@@ -16,7 +16,7 @@ def obtener_info_inversionistas(inversionista_seleccionado):
 
 def main():
     # URL de la imagen en GitHub
-    image = Image.open('Header.jpg', use_column_width("true"))
+    image = Image.open('Header.jpg', use_column_width=True)
     #github_image_url = "https://github.com/SofiMedina07/sitioweb/blob/main/Header.jpg"
     
     # Mostrar la imagen
