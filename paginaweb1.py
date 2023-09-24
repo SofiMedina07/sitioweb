@@ -19,9 +19,9 @@ def main():
     image = Image.open('Header.jpg')
     
     # Mostrar la imagen
-    st.image(image,caption=None, width=1200, align='left')
+    st.image(image,caption=None, width=1200)
    
-    st.header(':red[FINTECH BANORTE]', divider='red')
+    st.header(':red[FINTECH BANORTE]', divider='red', align='left')
 
     # Sección para agregar medicamentos al menú desplegable
     inversionistas = ["","Inversionista agresivo dinámico","Inversionista conservador cauteloso","Inversionista moderado perspicaz","Inversionista moderado pasivo"]
