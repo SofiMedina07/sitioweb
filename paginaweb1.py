@@ -14,8 +14,8 @@ def obtener_info_inversionistas(inversionista_seleccionado):
     return respuesta.choices[0].text.strip()
 
 def main():
-    st.title('FINTECH BANORTE')
-    st.title('_Streamlit_ is :blue[cool] :sunglasses:')
+    st.title('red[FINTECH BANORTE]')
+
 
     # Sección para agregar medicamentos al menú desplegable
     inversionistas = ["","Inversionista agresivo dinámico","Inversionista conservador cauteloso","Inversionista moderado perspicaz","Inversionista moderado pasivo"]
