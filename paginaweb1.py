@@ -16,7 +16,7 @@ def obtener_info_inversionistas(inversionista_seleccionado):
 def main():
     # URL de la imagen en GitHub
     image = Image.open('Header.jpg')
-    col1, col2, col3 = st.beta_columns([1,6,1])
+    col1, col2, col3 = st.columns([1,6,1])
 
     with col1:
         st.write("")
