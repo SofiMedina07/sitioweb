@@ -24,8 +24,8 @@ def obtener_info_pregunta(inversionista_seleccionado,pregunta):
 
 def main():
     # URL de la imagen en GitHub
-    image = Image.open("C:/Users/Sofi/Desktop/site/Header.jpg")
-    image2 = Image.open("C:/Users/Sofi/Desktop/site/coach.jpg")
+    image = Image.open("Header.jpg")
+    image2 = Image.open("coach.jpg")
     # Mostrar la imagen
     st.image(image,caption=None, width=340)
    
