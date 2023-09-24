@@ -16,7 +16,7 @@ def obtener_info_inversionistas(inversionista_seleccionado):
 def main():
     # URL de la imagen en GitHub
     image = Image.open('Header.jpg')
-    
+    imagen_fondo = Image.open('bottom.jpg')
     # Mostrar la imagen
     st.image(image,caption=None, width=340)
    
@@ -39,5 +39,5 @@ def main():
     if st.button("Preguntar"):
         respuesta = obtener_info_inversionistas(pregunta)
         st.write(f"Respuesta: {respuesta}")
-
+    st.image(imagen_fondo,caption=None, width=370)
 main()
